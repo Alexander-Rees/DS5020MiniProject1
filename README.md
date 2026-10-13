@@ -149,6 +149,6 @@ Alex Rees's reflection is still to be written from `docs/individual_reflection_t
 | Alex Rees (partner) | Data Engineer: DE1 profile, DE2 cleaning log, DE3 split, DE4 matrix, DE5 report, plus the exploratory ML1 note and dense-SVD ML2 (k = 100 chosen) in `notebooks/data_exploration.ipynb` | Commits `3eb1984`, `d2ba10f`, `91b282a`, `e798bb8`, `b15e231`, `7eed7d6` (git author `AlexRees23`; `3eb1984`: `Alexander Rees`) |
 | Jiaxiao Chen | ML Engineer completion: DE6 script, sparse ML2 sweep, ML3-ML7, tests, completion notebook, README, docs, memo, slides and reflection draft | Files listed in `docs/contribution_log.md`, dated 2026-10-12, prepared with AI assistance (Claude for implementation and drafting, Codex for planning and verification). They are in the completion commit "Complete retail recommendation project and individual reflection", author Jiaxiao Chen; use `git log --oneline -- <file>` to verify |
 
-The memo (J2) and slides (J3) come from the artifact scripts above. Still open: pushing the commit to GitHub, both
-signatures on the contribution log, the confidential peer evaluations, Jiaxiao Chen's review of the reflection
+The memo (J2) and slides (J3) come from the artifact scripts above. The completion commit `20666f4` has been pushed to
+GitHub (https://github.com/Alexander-Rees/DS5020MiniProject1, `main`). Still open: both signatures on the contribution log, the confidential peer evaluations, Jiaxiao Chen's review of the reflection
 draft, Alex Rees's reflection, the presentation itself and the Canvas upload. See `docs/submission_checklist.md`.
