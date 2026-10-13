@@ -1,0 +1,11 @@
+measure,PCA,Truncated SVD
+k used,100,100
+Fit time (seconds),0.19,0.186
+"Peak memory during fit (MB, process RSS)",202.0,210.8
+"Memory increase during fit (MB, above loaded matrix)",29.3,37.9
+"Size of stored factors (MB, customers + products [+ mean])",7.357,7.328
+Variance explained (PCA) / relative reconstruction error (SVD),44.8% variance explained,0.7268 relative error
+Relative reconstruction error of A (same formula for both),0.7266,0.7268
+Hit rate at 10 on held-out purchases,22.9% (438/1913),23.2% (444/1913)
+Best-seller baseline hit rate at 10,17.4% (333/1913),17.4% (333/1913)
+"What component 1 represents, in words",Overall buying volume: scores rise with how much and how widely a customer buys (r = 0.68 with log total quantity; 100% of product loadings share one sign),Overall buying volume: scores rise with how much and how widely a customer buys (r = 0.69 with log total quantity; 100% of product loadings share one sign)

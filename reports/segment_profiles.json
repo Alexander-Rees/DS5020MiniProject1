@@ -1,0 +1,496 @@
+{
+  "method": "k-means (k=4, n_init=20, random_state=42) on the standardised (log10 radius, angle) of the first two customer components of the chosen training-only SVD fit (not all 100 components)",
+  "component_2": {
+    "description": "Contrast around the average customer: White Hanging Heart T-Light Holder and similar best sellers versus Lunch Bag Spaceboy Design (r = -0.02 with log total quantity; only 70% of loadings share one sign)",
+    "volume_correlation": -0.018318224548697755,
+    "volume_spearman": 0.03418667775152199,
+    "breadth_correlation": 0.08492545350290122,
+    "same_sign_loadings_pct": 69.81285598047194,
+    "top_products": [
+      "WHITE HANGING HEART T-LIGHT HOLDER",
+      "HEART OF WICKER SMALL",
+      "ASSORTED COLOUR BIRD ORNAMENT",
+      "HEART OF WICKER LARGE",
+      "ZINC METAL HEART DECORATION"
+    ],
+    "negative_products": [
+      "LUNCH BAG SPACEBOY DESIGN",
+      "ROUND SNACK BOXES SET OF4 WOODLAND",
+      "PLASTERS IN TIN SPACEBOY"
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": 0,
+      "customers": 1365,
+      "customer_share_pct": 24.94061757719715,
+      "total_quantity": 6034609.0,
+      "avg_quantity_per_customer": 4420.958974358974,
+      "median_quantity_per_customer": 1851.0,
+      "median_volume_vs_all": 4.068131868131868,
+      "avg_distinct_products": 169.93919413919414,
+      "avg_invoices": 12.388278388278389,
+      "top_products": [
+        {
+          "stock_code": "21212",
+          "description": "PACK OF 72 RETROSPOT CAKE CASES",
+          "buyer_share_pct": 52.45421245421229
+        },
+        {
+          "stock_code": "20725",
+          "description": "LUNCH BAG RED RETROSPOT",
+          "buyer_share_pct": 43.736263736263595
+        },
+        {
+          "stock_code": "85099B",
+          "description": "JUMBO BAG RED RETROSPOT",
+          "buyer_share_pct": 41.758241758241624
+        },
+        {
+          "stock_code": "22382",
+          "description": "LUNCH BAG SPACEBOY DESIGN",
+          "buyer_share_pct": 39.120879120878996
+        },
+        {
+          "stock_code": "22423",
+          "description": "REGENCY CAKESTAND 3 TIER",
+          "buyer_share_pct": 38.608058608058485
+        }
+      ],
+      "distinctive_products": [
+        {
+          "stock_code": "23549",
+          "description": "WRAP BIRD GARDEN",
+          "buyer_share_pct": 2.051282051282053,
+          "mix_lift": 1.6654604606114949
+        },
+        {
+          "stock_code": "23345",
+          "description": "DOLLY GIRL BEAKER",
+          "buyer_share_pct": 4.761904761904759,
+          "mix_lift": 1.6569632133634773
+        },
+        {
+          "stock_code": "23388",
+          "description": "WOODLAND MINI BACKPACK",
+          "buyer_share_pct": 4.102564102564102,
+          "mix_lift": 1.6117359296240277
+        },
+        {
+          "stock_code": "23346",
+          "description": "SPACEBOY BEAKER",
+          "buyer_share_pct": 4.761904761904759,
+          "mix_lift": 1.610936457436714
+        },
+        {
+          "stock_code": "23389",
+          "description": "SPACEBOY MINI BACKPACK",
+          "buyer_share_pct": 5.201465201465197,
+          "mix_lift": 1.603720967948682
+        },
+        {
+          "stock_code": "23445",
+          "description": "ICE CREAM BUBBLES",
+          "buyer_share_pct": 2.8571428571428594,
+          "mix_lift": 1.5816467036651372
+        },
+        {
+          "stock_code": "23347",
+          "description": "I LOVE LONDON BEAKER",
+          "buyer_share_pct": 2.710622710622713,
+          "mix_lift": 1.571990740883299
+        },
+        {
+          "stock_code": "22708",
+          "description": "WRAP DOLLY GIRL",
+          "buyer_share_pct": 6.446886446886438,
+          "mix_lift": 1.5702912914336953
+        },
+        {
+          "stock_code": "22543",
+          "description": "MINI JIGSAW BAKE A CAKE",
+          "buyer_share_pct": 4.249084249084248,
+          "mix_lift": 1.5681283557705636
+        },
+        {
+          "stock_code": "22547",
+          "description": "MINI JIGSAW DINOSAUR",
+          "buyer_share_pct": 4.688644688644686,
+          "mix_lift": 1.564424698813146
+        }
+      ],
+      "countries": [
+        {
+          "country": "United Kingdom",
+          "customer_share_pct": 85.49450549450549
+        },
+        {
+          "country": "Germany",
+          "customer_share_pct": 3.8827838827838828
+        },
+        {
+          "country": "France",
+          "customer_share_pct": 2.271062271062271
+        }
+      ],
+      "uk_share_pct": 85.49450549450549,
+      "overall_uk_share_pct": 91.30275899872099,
+      "theme": "children's ranges",
+      "name": "High-volume wholesalers: children's ranges"
+    },
+    {
+      "segment_id": 1,
+      "customers": 1910,
+      "customer_share_pct": 34.89859309336744,
+      "total_quantity": 1925592.0,
+      "avg_quantity_per_customer": 1008.1633507853403,
+      "median_quantity_per_customer": 462.5,
+      "median_volume_vs_all": 1.0164835164835164,
+      "avg_distinct_products": 67.73298429319372,
+      "avg_invoices": 5.4099476439790575,
+      "top_products": [
+        {
+          "stock_code": "85123A",
+          "description": "WHITE HANGING HEART T-LIGHT HOLDER",
+          "buyer_share_pct": 45.497382198952494
+        },
+        {
+          "stock_code": "84879",
+          "description": "ASSORTED COLOUR BIRD ORNAMENT",
+          "buyer_share_pct": 25.968586387434765
+        },
+        {
+          "stock_code": "22423",
+          "description": "REGENCY CAKESTAND 3 TIER",
+          "buyer_share_pct": 24.921465968586627
+        },
+        {
+          "stock_code": "22469",
+          "description": "HEART OF WICKER SMALL",
+          "buyer_share_pct": 24.60732984293217
+        },
+        {
+          "stock_code": "22470",
+          "description": "HEART OF WICKER LARGE",
+          "buyer_share_pct": 23.926701570680848
+        }
+      ],
+      "distinctive_products": [
+        {
+          "stock_code": "85129A",
+          "description": "WHITE PEARL BEADED HEART, SMALL",
+          "buyer_share_pct": 2.041884816753927,
+          "mix_lift": 2.4467218966120883
+        },
+        {
+          "stock_code": "22156",
+          "description": "HEART DECORATION WITH PEARLS",
+          "buyer_share_pct": 8.272251308900506,
+          "mix_lift": 2.1151898983907533
+        },
+        {
+          "stock_code": "22266",
+          "description": "EASTER DECORATION HANGING BUNNY",
+          "buyer_share_pct": 2.9842931937172805,
+          "mix_lift": 2.0491560223138405
+        },
+        {
+          "stock_code": "82486",
+          "description": "WOOD S/3 CABINET ANT WHITE FINISH",
+          "buyer_share_pct": 11.25654450261777,
+          "mix_lift": 2.047337118158696
+        },
+        {
+          "stock_code": "22794",
+          "description": "SWEETHEART WIRE MAGAZINE RACK",
+          "buyer_share_pct": 3.9790575916230364,
+          "mix_lift": 2.043416089478228
+        },
+        {
+          "stock_code": "22172",
+          "description": "METAL SHELF WITH RAIL",
+          "buyer_share_pct": 4.136125654450261,
+          "mix_lift": 2.0384289746588307
+        },
+        {
+          "stock_code": "71038",
+          "description": "WHITE HANGING BEADS CANDLE HOLDER",
+          "buyer_share_pct": 2.617801047120421,
+          "mix_lift": 2.0250375970012415
+        },
+        {
+          "stock_code": "82483",
+          "description": "WOOD 2 DRAWER CABINET WHITE FINISH",
+          "buyer_share_pct": 10.837696335078505,
+          "mix_lift": 2.013096645821356
+        },
+        {
+          "stock_code": "21386",
+          "description": "IVORY HANGING DECORATION  EGG",
+          "buyer_share_pct": 2.094240837696336,
+          "mix_lift": 1.9997246270387263
+        },
+        {
+          "stock_code": "23061",
+          "description": "VINTAGE EMBOSSED HEART",
+          "buyer_share_pct": 2.094240837696336,
+          "mix_lift": 1.9997246270387263
+        }
+      ],
+      "countries": [
+        {
+          "country": "United Kingdom",
+          "customer_share_pct": 96.70157068062827
+        },
+        {
+          "country": "Spain",
+          "customer_share_pct": 0.36649214659685864
+        },
+        {
+          "country": "Cyprus",
+          "customer_share_pct": 0.31413612565445026
+        }
+      ],
+      "uk_share_pct": 96.70157068062827,
+      "overall_uk_share_pct": 91.30275899872099,
+      "theme": "home decor",
+      "name": "Mid-size regular buyers: home decor"
+    },
+    {
+      "segment_id": 2,
+      "customers": 1387,
+      "customer_share_pct": 25.342590900785677,
+      "total_quantity": 986166.0,
+      "avg_quantity_per_customer": 711.0064888248017,
+      "median_quantity_per_customer": 273.0,
+      "median_volume_vs_all": 0.6,
+      "avg_distinct_products": 31.816149963950974,
+      "avg_invoices": 2.3020908435472243,
+      "top_products": [
+        {
+          "stock_code": "22138",
+          "description": "BAKING SET 9 PIECE RETROSPOT",
+          "buyer_share_pct": 16.726748377793797
+        },
+        {
+          "stock_code": "21212",
+          "description": "PACK OF 72 RETROSPOT CAKE CASES",
+          "buyer_share_pct": 12.25666906993511
+        },
+        {
+          "stock_code": "22139",
+          "description": "RETROSPOT TEA SET CERAMIC 11 PC",
+          "buyer_share_pct": 12.040374909877432
+        },
+        {
+          "stock_code": "85099B",
+          "description": "JUMBO BAG RED RETROSPOT",
+          "buyer_share_pct": 10.95890410958904
+        },
+        {
+          "stock_code": "22423",
+          "description": "REGENCY CAKESTAND 3 TIER",
+          "buyer_share_pct": 10.88680605623648
+        }
+      ],
+      "distinctive_products": [
+        {
+          "stock_code": "21054",
+          "description": "NURSE'S BAG SOFT TOY",
+          "buyer_share_pct": 2.235039653929344,
+          "mix_lift": 2.4642193092593327
+        },
+        {
+          "stock_code": "85227",
+          "description": "SET OF 6 3D KIT CARDS FOR KIDS",
+          "buyer_share_pct": 3.3886085075702956,
+          "mix_lift": 2.370197760865809
+        },
+        {
+          "stock_code": "21890",
+          "description": "S/6 WOODEN SKITTLES IN COTTON BAG",
+          "buyer_share_pct": 5.335255948089401,
+          "mix_lift": 2.3292447508608456
+        },
+        {
+          "stock_code": "22617",
+          "description": "BAKING SET SPACEBOY DESIGN",
+          "buyer_share_pct": 9.372746935832732,
+          "mix_lift": 2.3182340367986116
+        },
+        {
+          "stock_code": "21731",
+          "description": "RED TOADSTOOL LED NIGHT LIGHT",
+          "buyer_share_pct": 6.344628695025234,
+          "mix_lift": 2.2992589906863965
+        },
+        {
+          "stock_code": "22128",
+          "description": "PARTY CONES CANDY ASSORTED",
+          "buyer_share_pct": 2.451333813987022,
+          "mix_lift": 2.2943717495354936
+        },
+        {
+          "stock_code": "22138",
+          "description": "BAKING SET 9 PIECE RETROSPOT",
+          "buyer_share_pct": 16.726748377793797,
+          "mix_lift": 2.231942690166534
+        },
+        {
+          "stock_code": "21791",
+          "description": "VINTAGE HEADS AND TAILS CARD GAME",
+          "buyer_share_pct": 9.66113914924297,
+          "mix_lift": 2.2246209373684596
+        },
+        {
+          "stock_code": "21829",
+          "description": "DINOSAUR KEYRINGS ASSORTED",
+          "buyer_share_pct": 3.532804614275414,
+          "mix_lift": 2.209695416584594
+        },
+        {
+          "stock_code": "16237",
+          "description": "SLEEPING CAT ERASERS",
+          "buyer_share_pct": 3.1002162941600577,
+          "mix_lift": 2.192049224260493
+        }
+      ],
+      "countries": [
+        {
+          "country": "United Kingdom",
+          "customer_share_pct": 85.86878154289835
+        },
+        {
+          "country": "France",
+          "customer_share_pct": 3.172314347512617
+        },
+        {
+          "country": "Germany",
+          "customer_share_pct": 2.6676279740447004
+        }
+      ],
+      "uk_share_pct": 85.86878154289835,
+      "overall_uk_share_pct": 91.30275899872099,
+      "theme": "children's ranges, party & paper goods",
+      "name": "Smaller regular buyers: children's ranges, party & paper goods"
+    },
+    {
+      "segment_id": 3,
+      "customers": 811,
+      "customer_share_pct": 14.818198428649735,
+      "total_quantity": 272033.0,
+      "avg_quantity_per_customer": 335.42909987669543,
+      "median_quantity_per_customer": 77.0,
+      "median_volume_vs_all": 0.16923076923076924,
+      "avg_distinct_products": 10.432799013563502,
+      "avg_invoices": 1.6202219482120839,
+      "top_products": [
+        {
+          "stock_code": "22423",
+          "description": "REGENCY CAKESTAND 3 TIER",
+          "buyer_share_pct": 7.27496917385944
+        },
+        {
+          "stock_code": "21034",
+          "description": "REX CASH+CARRY JUMBO SHOPPER",
+          "buyer_share_pct": 5.672009864364985
+        },
+        {
+          "stock_code": "15056N",
+          "description": "EDWARDIAN PARASOL NATURAL",
+          "buyer_share_pct": 4.315659679408139
+        },
+        {
+          "stock_code": "47566",
+          "description": "PARTY BUNTING",
+          "buyer_share_pct": 4.315659679408139
+        },
+        {
+          "stock_code": "72741",
+          "description": "GRAND CHOCOLATECANDLE",
+          "buyer_share_pct": 3.945745992601726
+        }
+      ],
+      "distinctive_products": [
+        {
+          "stock_code": "15056N",
+          "description": "EDWARDIAN PARASOL NATURAL",
+          "buyer_share_pct": 4.315659679408139,
+          "mix_lift": 5.172995628422715
+        },
+        {
+          "stock_code": "84947",
+          "description": "ANTIQUE SILVER TEA GLASS ENGRAVED",
+          "buyer_share_pct": 3.205918618988901,
+          "mix_lift": 4.659215110225629
+        },
+        {
+          "stock_code": "15056BL",
+          "description": "EDWARDIAN PARASOL BLACK",
+          "buyer_share_pct": 2.8360049321824894,
+          "mix_lift": 3.7382074721577725
+        },
+        {
+          "stock_code": "20679",
+          "description": "EDWARDIAN PARASOL RED",
+          "buyer_share_pct": 2.21948212083847,
+          "mix_lift": 3.494411332669222
+        },
+        {
+          "stock_code": "72741",
+          "description": "GRAND CHOCOLATECANDLE",
+          "buyer_share_pct": 3.945745992601726,
+          "mix_lift": 3.2750968138824508
+        },
+        {
+          "stock_code": "15036",
+          "description": "ASSORTED COLOURS SILK FAN",
+          "buyer_share_pct": 2.342786683107274,
+          "mix_lift": 3.26145057715794
+        },
+        {
+          "stock_code": "21034",
+          "description": "REX CASH+CARRY JUMBO SHOPPER",
+          "buyer_share_pct": 5.672009864364985,
+          "mix_lift": 3.2148584260556845
+        },
+        {
+          "stock_code": "84946",
+          "description": "ANTIQUE SILVER TEA GLASS ETCHED",
+          "buyer_share_pct": 3.5758323057953136,
+          "mix_lift": 2.6419571714407897
+        },
+        {
+          "stock_code": "22697",
+          "description": "GREEN REGENCY TEACUP AND SAUCER",
+          "buyer_share_pct": 2.712700369913686,
+          "mix_lift": 2.4295230033004973
+        },
+        {
+          "stock_code": "22698",
+          "description": "PINK REGENCY TEACUP AND SAUCER",
+          "buyer_share_pct": 2.21948212083847,
+          "mix_lift": 2.412579878993545
+        }
+      ],
+      "countries": [
+        {
+          "country": "United Kingdom",
+          "customer_share_pct": 97.65721331689272
+        },
+        {
+          "country": "Belgium",
+          "customer_share_pct": 0.36991368680641185
+        },
+        {
+          "country": "Spain",
+          "customer_share_pct": 0.36991368680641185
+        }
+      ],
+      "uk_share_pct": 97.65721331689272,
+      "overall_uk_share_pct": 91.30275899872099,
+      "theme": "mixed gifts",
+      "name": "Occasional small buyers: mixed gifts"
+    }
+  ]
+}

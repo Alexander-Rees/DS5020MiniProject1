@@ -1,0 +1,6 @@
+k,hit_rate_at_10,hits,evaluated_customers,note
+10,0.1447987454260324,277,1913,descriptive only; not used to choose k
+20,0.18295870360690017,350,1913,descriptive only; not used to choose k
+50,0.21275483533716674,407,1913,descriptive only; not used to choose k
+100,0.23209618400418192,444,1913,descriptive only; not used to choose k
+200,0.2190277051751176,419,1913,descriptive only; not used to choose k

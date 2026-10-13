@@ -226,3 +226,7 @@ __pycache__/
 .ipynb_checkpoints/
 
 Mini-Project#01.pdf
+# Local scratch and artifact temp files
+tmp/
+# Raw UCI archive: kept locally for build_matrix.py, excluded from new commits (it was in d2ba10f; history not rewritten)
+online+retail+ii.zip

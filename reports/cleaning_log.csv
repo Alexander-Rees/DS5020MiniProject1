@@ -1,0 +1,7 @@
+rule,reason,rows_removed,rows_remaining
+Cancellations,Invoice starts with C,19494,1047877
+Non-positive quantity,Quantity <= 0,3457,1044420
+Non-positive price,Price <= 0,2750,1041670
+Non-product codes,"Postage, fees, discounts, samples, adjustments, tests, vouchers",4666,1037004
+Missing customer ID,Customer ID is null,234370,802634
+Total removed,,264737,802634

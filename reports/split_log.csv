@@ -1,0 +1,4 @@
+split,rows,customers,products,start,end
+Train (before cutoff),684071,5474,4530,2009-12-01 07:45:00,2011-10-09 12:49:00
+Test (new products),72919,2308,2849,2011-10-09 13:11:00,2011-12-09 12:50:00
+Test-period repeats excluded,45644,1872,2253,2011-10-09 12:59:00,2011-12-09 12:50:00

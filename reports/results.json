@@ -1,0 +1,586 @@
+{
+  "schema_version": "1.0",
+  "generated_by": "model_analysis.py",
+  "chosen_model": "Truncated SVD",
+  "chosen_k": 100,
+  "seed": 42,
+  "purchase_value": "log",
+  "top_n": 10,
+  "memory_units": "decimal MB (1 MB = 1,000,000 bytes)",
+  "rate_units": "*_rate* and hit_rate_at_10 are fractions in 0..1; *_pct fields are percentages in 0..100",
+  "matrix": {
+    "customers": 5473,
+    "products": 3687,
+    "nonzeros": 413927,
+    "sparsity_pct": 97.94871893984974,
+    "dense_mb": 161.431608,
+    "sparse_mb": 4.98902,
+    "min_buyers_per_product": 10
+  },
+  "data": {
+    "raw_rows": 1067371,
+    "clean_rows": 802634,
+    "train_rows": 684071,
+    "test_rows": 72919,
+    "excluded_repeat_rows": 45644,
+    "cutoff": "2011-10-09 12:50:00",
+    "train_start": "2009-12-01 07:45:00",
+    "train_end": "2011-10-09 12:49:00",
+    "test_start": "2011-10-09 13:11:00",
+    "test_end": "2011-12-09 12:50:00"
+  },
+  "evaluation": {
+    "total_test_customers": 2308,
+    "warm_test_customers": 1930,
+    "cold_start_customers": 378,
+    "warm_customers_no_eligible_product": 17,
+    "eligible_customers": 1913,
+    "eligible_customer_coverage_pct": 82.88561525129982,
+    "total_test_pairs": 63252,
+    "eligible_test_pairs": 44727,
+    "cold_customer_pairs": 13829,
+    "warm_pairs_product_not_in_catalogue": 4696,
+    "eligible_pair_coverage_pct": 70.7123885410738,
+    "test_products": 2849,
+    "test_products_in_catalogue": 2555,
+    "eligible_product_coverage_pct": 89.68058968058968,
+    "primary_cohort": "warm matrix customers with at least one held-out product in the training catalogue",
+    "coverage_definitions": {
+      "eligible_customer_coverage_pct": "eligible customers / all distinct test customers",
+      "eligible_pair_coverage_pct": "held-out (customer, product) pairs with a warm customer and a catalogue product / all distinct test pairs",
+      "eligible_product_coverage_pct": "distinct test products in the training catalogue / all distinct test products"
+    },
+    "recall_note": "recall_at_10 = mean over cohort customers of (held-out products in the top 10) / (that customer's held-out catalogue products); the denominator is not capped at 10",
+    "warm_rate_note": "warm_hit_rate_at_10 divides the same hits by every warm test customer, so customers whose held-out products are all outside the catalogue count as misses",
+    "all_test_rate_note": "all_test_hit_rate_at_10 divides by every test customer, cold-start customers counted as misses",
+    "cold_start_bestseller_hits": 133,
+    "svd_all_test_hit_rate_with_cold_fallback": 0.25,
+    "baseline_all_test_hit_rate_with_cold_fallback": 0.2019064124783362,
+    "comparisons": {
+      "svd_vs_baseline": {
+        "difference": 0.05802404600104549,
+        "ci95_low": 0.033978044955567194,
+        "ci95_high": 0.08260585467851538,
+        "only_first_hit": 331,
+        "only_second_hit": 220,
+        "mcnemar_exact_p": 2.58597758305924e-06
+      },
+      "pca_vs_baseline": {
+        "difference": 0.05488761108207005,
+        "ci95_low": 0.03084161003659175,
+        "ci95_high": 0.0799790904338735,
+        "only_first_hit": 325,
+        "only_second_hit": 220,
+        "mcnemar_exact_p": 7.899864408908149e-06
+      },
+      "svd_vs_pca": {
+        "difference": 0.003136434918975445,
+        "ci95_low": -0.0005358076319916505,
+        "ci95_high": 0.00731834814427601,
+        "only_first_hit": 11,
+        "only_second_hit": 5,
+        "mcnemar_exact_p": 0.210113525390625
+      }
+    },
+    "bootstrap_samples": 2000
+  },
+  "svd": {
+    "k": 100,
+    "fit_seconds": 0.18599179199372884,
+    "fit_seconds_runs": [
+      0.19235220800328534,
+      0.18800437499885447,
+      0.18599179199372884,
+      0.18490037499577738,
+      0.18527316699328367
+    ],
+    "peak_rss_mb": 210.763776,
+    "rss_increase_mb": 37.896192,
+    "rss_after_imports_mb": 166.346752,
+    "rss_loaded_matrix_mb": 172.867584,
+    "ru_maxrss_after_fit_mb": 210.796544,
+    "factor_mb": 7.328,
+    "customer_factor_mb": 4.3784,
+    "product_factor_mb": 2.9496,
+    "mean_vector_mb": 0.0,
+    "factor_file_mb": 7.328548,
+    "product_vectors_mb": 2.9496,
+    "item_top10_table_mb": 0.29496,
+    "relative_error": 0.7267585882201916,
+    "relative_error_centred": null,
+    "variance_explained": null,
+    "hit_rate_at_10": 0.23209618400418192,
+    "hits": 444,
+    "evaluated_customers": 1913,
+    "hit_rate_ci95_low": 0.21275483533716674,
+    "hit_rate_ci95_high": 0.25145060115002604,
+    "recall_at_10": 0.028360992170111104,
+    "warm_hit_rate_at_10": 0.23005181347150258,
+    "all_test_hit_rate_at_10": 0.1923743500866551,
+    "vs_baseline": {
+      "difference": 0.05802404600104549,
+      "ci95_low": 0.033978044955567194,
+      "ci95_high": 0.08260585467851538,
+      "only_first_hit": 331,
+      "only_second_hit": 220,
+      "mcnemar_exact_p": 2.58597758305924e-06
+    },
+    "component_1_description": "Overall buying volume: scores rise with how much and how widely a customer buys (r = 0.69 with log total quantity; 100% of product loadings share one sign)",
+    "component_1_volume_correlation": 0.6899976512936898,
+    "component_1_volume_spearman": 0.8773476381375593,
+    "component_1_breadth_correlation": 0.8933164754975405,
+    "component_1_same_sign_loadings_pct": 100.0,
+    "component_1_top_products": [
+      "PACK OF 72 RETROSPOT CAKE CASES",
+      "WHITE HANGING HEART T-LIGHT HOLDER",
+      "JUMBO BAG RED RETROSPOT",
+      "LUNCH BAG RED RETROSPOT",
+      "60 TEATIME FAIRY CAKE CASES"
+    ],
+    "solver": "arpack"
+  },
+  "pca": {
+    "k": 100,
+    "fit_seconds": 0.18953833301202394,
+    "fit_seconds_runs": [
+      0.1952166249975562,
+      0.18953833301202394,
+      0.18852645800507162,
+      0.18943291700270493,
+      0.18954862499958836
+    ],
+    "peak_rss_mb": 201.981952,
+    "rss_increase_mb": 29.261824,
+    "rss_after_imports_mb": 166.21568,
+    "rss_loaded_matrix_mb": 172.720128,
+    "ru_maxrss_after_fit_mb": 201.998336,
+    "factor_mb": 7.357496,
+    "customer_factor_mb": 4.3784,
+    "product_factor_mb": 2.9496,
+    "mean_vector_mb": 0.029496,
+    "factor_file_mb": 7.358284,
+    "product_vectors_mb": 2.9496,
+    "item_top10_table_mb": 0.29496,
+    "relative_error": 0.7266268351874376,
+    "relative_error_centred": 0.7428690405714896,
+    "variance_explained": 0.4481455885603945,
+    "hit_rate_at_10": 0.22895974908520647,
+    "hits": 438,
+    "evaluated_customers": 1913,
+    "hit_rate_ci95_low": 0.21014113957135389,
+    "hit_rate_ci95_high": 0.24830109775222164,
+    "recall_at_10": 0.02824124190975468,
+    "warm_hit_rate_at_10": 0.22694300518134716,
+    "all_test_hit_rate_at_10": 0.18977469670710573,
+    "vs_baseline": {
+      "difference": 0.05488761108207005,
+      "ci95_low": 0.03084161003659175,
+      "ci95_high": 0.0799790904338735,
+      "only_first_hit": 325,
+      "only_second_hit": 220,
+      "mcnemar_exact_p": 7.899864408908149e-06
+    },
+    "component_1_description": "Overall buying volume: scores rise with how much and how widely a customer buys (r = 0.68 with log total quantity; 100% of product loadings share one sign)",
+    "component_1_volume_correlation": 0.6837310510995842,
+    "component_1_volume_spearman": 0.876811267282272,
+    "component_1_breadth_correlation": 0.8894022565628166,
+    "component_1_same_sign_loadings_pct": 99.8372660699756,
+    "component_1_top_products": [
+      "PACK OF 72 RETROSPOT CAKE CASES",
+      "JUMBO BAG RED RETROSPOT",
+      "LUNCH BAG RED RETROSPOT",
+      "WHITE HANGING HEART T-LIGHT HOLDER",
+      "60 TEATIME FAIRY CAKE CASES"
+    ],
+    "solver": "arpack",
+    "centring": "implicit (sparse input, svd_solver='arpack'); no scaling"
+  },
+  "baseline": {
+    "hit_rate_at_10": 0.17407213800313642,
+    "hits": 333,
+    "evaluated_customers": 1913,
+    "recall_at_10": 0.011532454641181444,
+    "hit_rate_ci95_low": 0.15629900679560899,
+    "hit_rate_ci95_high": 0.19238107684265543,
+    "warm_hit_rate_at_10": 0.17253886010362696,
+    "all_test_hit_rate_at_10": 0.14428076256499134,
+    "ranking": "training quantity summed per catalogue product; each customer's already-bought products removed and refilled",
+    "top_10_products": [
+      "WORLD WAR 2 GLIDERS ASSTD DESIGNS",
+      "PACK OF 72 RETROSPOT CAKE CASES",
+      "WHITE HANGING HEART T-LIGHT HOLDER",
+      "JUMBO BAG RED RETROSPOT",
+      "MEDIUM CERAMIC TOP STORAGE JAR",
+      "ASSORTED COLOUR BIRD ORNAMENT",
+      "BROCADE RING PURSE",
+      "SMALL POPCORN HOLDER",
+      "PACK OF 60 PINK PAISLEY CAKE CASES",
+      "60 TEATIME FAIRY CAKE CASES"
+    ]
+  },
+  "nightly": {
+    "fit_seconds": 0.18599179199372884,
+    "normalization_seconds": 0.00027966700145043433,
+    "item_scoring_seconds": 0.5206839579914231,
+    "total_seconds": 0.7069554169866024,
+    "customer_scoring_seconds": 0.7868224999983795,
+    "target_seconds": 60.0,
+    "products_scored": 3687,
+    "customers_scored": 5473,
+    "includes": "fit + normalise product vectors + top-10 neighbours for every catalogue product, on the prepared in-memory matrix; personalised top-10 for every customer is timed separately",
+    "excludes": "raw Excel reading and cleaning, Python imports, loading and saving files, deployment and network"
+  },
+  "sensitivity": [
+    {
+      "weighting": "count",
+      "k": 100,
+      "main_model": false,
+      "hit_rate_at_10": 0.12911657083115524,
+      "hits": 247,
+      "evaluated_customers": 1913,
+      "recall_at_10": 0.009306376987713404,
+      "relative_error": 0.1244858347028672,
+      "fit_seconds": 0.13450374999956694,
+      "vs_baseline_difference": -0.04495556717198118,
+      "vs_baseline_ci95_low": -0.0669106116048092,
+      "vs_baseline_ci95_high": -0.0224647151071616
+    },
+    {
+      "weighting": "binary",
+      "k": 100,
+      "main_model": false,
+      "hit_rate_at_10": 0.2493465760585468,
+      "hits": 477,
+      "evaluated_customers": 1913,
+      "recall_at_10": 0.028159091832476075,
+      "relative_error": 0.7800144305204559,
+      "fit_seconds": 0.23374866700032726,
+      "vs_baseline_difference": 0.07527443805541037,
+      "vs_baseline_ci95_low": 0.05070569785676948,
+      "vs_baseline_ci95_high": 0.09879769994772611
+    },
+    {
+      "weighting": "log",
+      "k": 100,
+      "main_model": true,
+      "hit_rate_at_10": 0.23209618400418192,
+      "hits": 444,
+      "evaluated_customers": 1913,
+      "recall_at_10": 0.028360992170111104,
+      "relative_error": 0.7267585882201916,
+      "fit_seconds": 0.18599179199372884,
+      "vs_baseline_difference": 0.05802404600104549,
+      "vs_baseline_ci95_low": 0.033978044955567194,
+      "vs_baseline_ci95_high": 0.08260585467851538
+    }
+  ],
+  "k_curve": [
+    {
+      "k": 10,
+      "relative_error": 0.8760831545540297,
+      "fit_seconds": 0.0316071249981178,
+      "peak_rss_mb": 178.601984,
+      "factor_mb": 0.7328,
+      "error_drop_per_component": 0.003025,
+      "svd_share_of_squared_norm_kept": 0.23247830630666,
+      "pca_variance_explained": 0.19858241573402513,
+      "within_factor_target": true
+    },
+    {
+      "k": 20,
+      "relative_error": 0.8458291292724354,
+      "fit_seconds": 0.04520350000530016,
+      "peak_rss_mb": 181.813248,
+      "factor_mb": 1.4656,
+      "error_drop_per_component": 0.001887,
+      "svd_share_of_squared_norm_kept": 0.2845730840742339,
+      "pca_variance_explained": 0.25268649343245564,
+      "within_factor_target": true
+    },
+    {
+      "k": 50,
+      "relative_error": 0.7892111399333758,
+      "fit_seconds": 0.09731441699841525,
+      "peak_rss_mb": 192.643072,
+      "factor_mb": 3.664,
+      "error_drop_per_component": 0.001249,
+      "svd_share_of_squared_norm_kept": 0.37714577660506154,
+      "pca_variance_explained": 0.3492917177507307,
+      "within_factor_target": true
+    },
+    {
+      "k": 100,
+      "relative_error": 0.7267585882201916,
+      "fit_seconds": 0.18599179199372884,
+      "peak_rss_mb": 210.763776,
+      "factor_mb": 7.328,
+      "error_drop_per_component": 0.000889,
+      "svd_share_of_squared_norm_kept": 0.4718219544481941,
+      "pca_variance_explained": 0.44814558856039444,
+      "within_factor_target": true
+    },
+    {
+      "k": 200,
+      "relative_error": 0.6378876869904841,
+      "fit_seconds": 0.4470282499969471,
+      "peak_rss_mb": 244.498432,
+      "factor_mb": 14.656,
+      "error_drop_per_component": null,
+      "svd_share_of_squared_norm_kept": 0.59309929878593,
+      "pca_variance_explained": 0.5748306181484857,
+      "within_factor_target": false
+    }
+  ],
+  "k_choice": {
+    "chosen_k": 100,
+    "reason": "Predeclared in the partner's ML2 and kept: the training error still falls at k=100 but each added component buys less, and k=100 is the largest swept k whose factors stay under the 10 MB storage target (k=200 does not). Test results were not used."
+  },
+  "segments": [
+    {
+      "segment_id": 0,
+      "name": "High-volume wholesalers: children's ranges",
+      "customers": 1365,
+      "customer_share_pct": 24.94061757719715,
+      "theme": "children's ranges",
+      "top_products": [
+        "PACK OF 72 RETROSPOT CAKE CASES",
+        "LUNCH BAG RED RETROSPOT",
+        "JUMBO BAG RED RETROSPOT",
+        "LUNCH BAG SPACEBOY DESIGN",
+        "REGENCY CAKESTAND 3 TIER"
+      ],
+      "distinctive_products": [
+        "WRAP BIRD GARDEN",
+        "DOLLY GIRL BEAKER",
+        "WOODLAND MINI BACKPACK",
+        "SPACEBOY BEAKER",
+        "SPACEBOY MINI BACKPACK",
+        "ICE CREAM BUBBLES",
+        "I LOVE LONDON BEAKER",
+        "WRAP DOLLY GIRL",
+        "MINI JIGSAW BAKE A CAKE",
+        "MINI JIGSAW DINOSAUR"
+      ],
+      "countries": [
+        {
+          "country": "United Kingdom",
+          "customer_share_pct": 85.49450549450549
+        },
+        {
+          "country": "Germany",
+          "customer_share_pct": 3.8827838827838828
+        },
+        {
+          "country": "France",
+          "customer_share_pct": 2.271062271062271
+        }
+      ],
+      "avg_quantity_per_customer": 4420.958974358974,
+      "median_quantity_per_customer": 1851.0,
+      "avg_distinct_products": 169.93919413919414,
+      "avg_invoices": 12.388278388278389
+    },
+    {
+      "segment_id": 1,
+      "name": "Mid-size regular buyers: home decor",
+      "customers": 1910,
+      "customer_share_pct": 34.89859309336744,
+      "theme": "home decor",
+      "top_products": [
+        "WHITE HANGING HEART T-LIGHT HOLDER",
+        "ASSORTED COLOUR BIRD ORNAMENT",
+        "REGENCY CAKESTAND 3 TIER",
+        "HEART OF WICKER SMALL",
+        "HEART OF WICKER LARGE"
+      ],
+      "distinctive_products": [
+        "WHITE PEARL BEADED HEART, SMALL",
+        "HEART DECORATION WITH PEARLS",
+        "EASTER DECORATION HANGING BUNNY",
+        "WOOD S/3 CABINET ANT WHITE FINISH",
+        "SWEETHEART WIRE MAGAZINE RACK",
+        "METAL SHELF WITH RAIL",
+        "WHITE HANGING BEADS CANDLE HOLDER",
+        "WOOD 2 DRAWER CABINET WHITE FINISH",
+        "IVORY HANGING DECORATION  EGG",
+        "VINTAGE EMBOSSED HEART"
+      ],
+      "countries": [
+        {
+          "country": "United Kingdom",
+          "customer_share_pct": 96.70157068062827
+        },
+        {
+          "country": "Spain",
+          "customer_share_pct": 0.36649214659685864
+        },
+        {
+          "country": "Cyprus",
+          "customer_share_pct": 0.31413612565445026
+        }
+      ],
+      "avg_quantity_per_customer": 1008.1633507853403,
+      "median_quantity_per_customer": 462.5,
+      "avg_distinct_products": 67.73298429319372,
+      "avg_invoices": 5.4099476439790575
+    },
+    {
+      "segment_id": 2,
+      "name": "Smaller regular buyers: children's ranges, party & paper goods",
+      "customers": 1387,
+      "customer_share_pct": 25.342590900785677,
+      "theme": "children's ranges, party & paper goods",
+      "top_products": [
+        "BAKING SET 9 PIECE RETROSPOT",
+        "PACK OF 72 RETROSPOT CAKE CASES",
+        "RETROSPOT TEA SET CERAMIC 11 PC",
+        "JUMBO BAG RED RETROSPOT",
+        "REGENCY CAKESTAND 3 TIER"
+      ],
+      "distinctive_products": [
+        "NURSE'S BAG SOFT TOY",
+        "SET OF 6 3D KIT CARDS FOR KIDS",
+        "S/6 WOODEN SKITTLES IN COTTON BAG",
+        "BAKING SET SPACEBOY DESIGN",
+        "RED TOADSTOOL LED NIGHT LIGHT",
+        "PARTY CONES CANDY ASSORTED",
+        "BAKING SET 9 PIECE RETROSPOT",
+        "VINTAGE HEADS AND TAILS CARD GAME",
+        "DINOSAUR KEYRINGS ASSORTED",
+        "SLEEPING CAT ERASERS"
+      ],
+      "countries": [
+        {
+          "country": "United Kingdom",
+          "customer_share_pct": 85.86878154289835
+        },
+        {
+          "country": "France",
+          "customer_share_pct": 3.172314347512617
+        },
+        {
+          "country": "Germany",
+          "customer_share_pct": 2.6676279740447004
+        }
+      ],
+      "avg_quantity_per_customer": 711.0064888248017,
+      "median_quantity_per_customer": 273.0,
+      "avg_distinct_products": 31.816149963950974,
+      "avg_invoices": 2.3020908435472243
+    },
+    {
+      "segment_id": 3,
+      "name": "Occasional small buyers: mixed gifts",
+      "customers": 811,
+      "customer_share_pct": 14.818198428649735,
+      "theme": "mixed gifts",
+      "top_products": [
+        "REGENCY CAKESTAND 3 TIER",
+        "REX CASH+CARRY JUMBO SHOPPER",
+        "EDWARDIAN PARASOL NATURAL",
+        "PARTY BUNTING",
+        "GRAND CHOCOLATECANDLE"
+      ],
+      "distinctive_products": [
+        "EDWARDIAN PARASOL NATURAL",
+        "ANTIQUE SILVER TEA GLASS ENGRAVED",
+        "EDWARDIAN PARASOL BLACK",
+        "EDWARDIAN PARASOL RED",
+        "GRAND CHOCOLATECANDLE",
+        "ASSORTED COLOURS SILK FAN",
+        "REX CASH+CARRY JUMBO SHOPPER",
+        "ANTIQUE SILVER TEA GLASS ETCHED",
+        "GREEN REGENCY TEACUP AND SAUCER",
+        "PINK REGENCY TEACUP AND SAUCER"
+      ],
+      "countries": [
+        {
+          "country": "United Kingdom",
+          "customer_share_pct": 97.65721331689272
+        },
+        {
+          "country": "Belgium",
+          "customer_share_pct": 0.36991368680641185
+        },
+        {
+          "country": "Spain",
+          "customer_share_pct": 0.36991368680641185
+        }
+      ],
+      "avg_quantity_per_customer": 335.42909987669543,
+      "median_quantity_per_customer": 77.0,
+      "avg_distinct_products": 10.432799013563502,
+      "avg_invoices": 1.6202219482120839
+    }
+  ],
+  "component_2": {
+    "volume_correlation": -0.018318224548697755,
+    "top_products": [
+      "WHITE HANGING HEART T-LIGHT HOLDER",
+      "HEART OF WICKER SMALL",
+      "ASSORTED COLOUR BIRD ORNAMENT",
+      "HEART OF WICKER LARGE",
+      "ZINC METAL HEART DECORATION"
+    ],
+    "negative_products": [
+      "LUNCH BAG SPACEBOY DESIGN",
+      "ROUND SNACK BOXES SET OF4 WOODLAND",
+      "PLASTERS IN TIN SPACEBOY"
+    ]
+  },
+  "targets": {
+    "factor_mb_max": 10.0,
+    "factor_target_met": true,
+    "nightly_seconds_max": 60.0,
+    "nightly_target_met": true,
+    "beats_baseline": true,
+    "segments": 4,
+    "segments_target_met": true
+  },
+  "files": {
+    "reports": [
+      "data_profile.csv",
+      "sheet_counts.csv",
+      "cleaning_log.csv",
+      "split_log.csv",
+      "matrix_report.json",
+      "svd_curve.csv",
+      "comparison.csv",
+      "evaluation.csv",
+      "sensitivity.csv",
+      "segments.csv",
+      "segment_profiles.json",
+      "k_test_descriptive.csv",
+      "results.json"
+    ],
+    "figures": [
+      "svd_curve.png",
+      "customer_map.png",
+      "customer_map_components.png",
+      "evaluation.png"
+    ]
+  },
+  "environment": {
+    "platform": "macOS-26.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "cpu": "Apple M4",
+    "logical_cpus": 10,
+    "ram_gb": 17.179869184,
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "3.0.6",
+    "scikit_learn": "1.9.1",
+    "psutil": "7.2.2",
+    "numpy_blas": "accelerate",
+    "thread_env": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    },
+    "memory_sampling": "psutil RSS sampled every 1 ms on a background thread during the first fit in a fresh process; ru_maxrss high-water mark kept as a check",
+    "timing": "median of 5 runs (time.perf_counter), one thread"
+  }
+}
