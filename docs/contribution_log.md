@@ -35,7 +35,7 @@ The completion commit is identifiable by this subject; use `git log --oneline --
 | 2026-10-12 | J3 slides (six slides, 5-minute speaker notes); prepared by Jiaxiao Chen with Claude assistance; each member presents their own part | ML | `output/slides/presentation.pptx` from `scripts/create_slides.mjs` | Jiaxiao Chen | prepared and included in completion commit; team review and presentation pending |
 | (to do) | C3 peer evaluation (confidential, each member separately) | each | `docs/peer_evaluation_template.md` (do not commit filled forms) | - | open |
 | 2026-10-12 | Individual reflection draft, Jiaxiao Chen (first-person draft prepared with AI assistance) | ML | `docs/individual_reflection.md`, `output/pdf/individual_reflection.pdf` from `scripts/create_reflection.py` | Jiaxiao Chen | draft included in completion commit; student review pending |
-| (to do) | Individual reflection, Alex Rees (half a page, own words) | DE | `docs/individual_reflection_template.md` | - | open |
+| 2026-10-13 | Individual reflection, Alex Rees (half a page) | DE | `docs/individual_reflection_alex_rees.md` | Alex Rees | written 2026-10-13 |
 
 ## Sign-off
 
@@ -43,5 +43,5 @@ To be filled in by hand. Each partner signs and dates once they have checked tha
 
 | Member | Signature | Date |
 | --- | --- | --- |
-| Alex Rees (Data Engineer) | | |
+| Alex Rees (Data Engineer) | Alex Rees | 2026-10-13 |
 | Jiaxiao Chen (ML Engineer) | | |

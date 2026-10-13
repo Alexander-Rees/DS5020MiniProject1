@@ -18,10 +18,10 @@ Team: Jiaxiao Chen (ML Engineer) and Alex Rees (Data Engineer, partner).
 | memo.pdf, one page, for Sarah (J2) | `output/pdf/memo.pdf` (built by `scripts/create_submission.py memo`, see README "Memo and slides"; not part of `run_project.py`) | ready |
 | Slides (J3) | `output/slides/presentation.pptx` (built by `scripts/create_submission.py facts` then `scripts/create_slides.mjs`, see README "Memo and slides") | ready (materials only; see presentation row) |
 | Work committed by each member under their own account (R5) | `git log` | Alex Rees's DE work: committed (`3eb1984` to `7eed7d6`). Jiaxiao Chen's completion files: committed in completion commit `20666f4` (`20666f45df425591e514493c794192a17b4d1b0e`), author Jiaxiao Chen, subject "Complete retail recommendation project and individual reflection" (includes the removal of `online+retail+ii.zip` from the index). **GitHub push: verified** (completion commit `20666f4` was verified as published on GitHub `main` at https://github.com/Alexander-Rees/DS5020MiniProject1) |
-| Contribution log signed by both partners (C2) | `docs/contribution_log.md` -> Sign-off | **open**: both signatures blank |
+| Contribution log signed by both partners (C2) | `docs/contribution_log.md` -> Sign-off | **partial**: Alex Rees signed 2026-10-13; Jiaxiao Chen's line is blank |
 | Peer evaluation form, submitted privately (C3) | `docs/peer_evaluation_template.md` (blank; never commit filled forms) | **open**, each member separately |
 | Individual reflection, half a page, Jiaxiao Chen | `docs/individual_reflection.md`, `output/pdf/individual_reflection.pdf` | draft ready (Markdown and PDF), prepared with AI assistance; **Jiaxiao Chen's review pending** |
-| Individual reflection, half a page, Alex Rees | `docs/individual_reflection_template.md` | **open**: still required, in Alex Rees's own words |
+| Individual reflection, half a page, Alex Rees | `docs/individual_reflection_alex_rees.md` | written 2026-10-13 |
 | Presentation given (J3) | class session | **open**: slides prepared; each member presents their own part |
 | Repository link, memo, slides and reflections uploaded to Canvas by Day 7 | Canvas | **open** |
 | Personal sign-off: I have read every file I submit and can explain it in the individual questions (C4) | this line | **open**, each member |

@@ -140,7 +140,7 @@ Jiaxiao Chen's own review. Rebuild the PDF after editing the Markdown:
 python scripts/create_reflection.py     # needs reportlab and pypdf; PNG preview needs pdftoppm
 ```
 
-Alex Rees's reflection is still to be written from `docs/individual_reflection_template.md`.
+Alex Rees's reflection is `docs/individual_reflection_alex_rees.md`.
 
 ## Team roles
 
@@ -150,5 +150,5 @@ Alex Rees's reflection is still to be written from `docs/individual_reflection_t
 | Jiaxiao Chen | ML Engineer completion: DE6 script, sparse ML2 sweep, ML3-ML7, tests, completion notebook, README, docs, memo, slides and reflection draft | Files listed in `docs/contribution_log.md`, dated 2026-10-12, prepared with AI assistance (Claude for implementation and drafting, Codex for planning and verification). They are in the completion commit "Complete retail recommendation project and individual reflection", author Jiaxiao Chen; use `git log --oneline -- <file>` to verify |
 
 The memo (J2) and slides (J3) come from the artifact scripts above. The completion commit `20666f4` has been pushed to
-GitHub (https://github.com/Alexander-Rees/DS5020MiniProject1, `main`). Still open: both signatures on the contribution log, the confidential peer evaluations, Jiaxiao Chen's review of the reflection
-draft, Alex Rees's reflection, the presentation itself and the Canvas upload. See `docs/submission_checklist.md`.
+GitHub (https://github.com/Alexander-Rees/DS5020MiniProject1, `main`). Alex Rees signed the contribution log on 2026-10-13. Still open: Jiaxiao Chen's signature, the confidential peer evaluations, Jiaxiao Chen's review of the reflection
+draft, the presentation itself and the Canvas upload. See `docs/submission_checklist.md`.
