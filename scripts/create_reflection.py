@@ -55,10 +55,10 @@ def inline(text):
 
 def build(title, meta, paragraphs, out):
     out.parent.mkdir(parents=True, exist_ok=True)
-    name = dict(meta)["Name"]
+    name, status = dict(meta)["Name"], dict(meta)["Status"]
     doc = SimpleDocTemplate(
         str(out), pagesize=LETTER, leftMargin=inch, rightMargin=inch, topMargin=inch, bottomMargin=inch,
-        title=title, author=name, subject="DS5020 Mini-Project 1 individual reflection (draft)",
+        title=title, author=name, subject=f"DS5020 Mini-Project 1 individual reflection ({status.lower()})",
         creator="scripts/create_reflection.py", invariant=True,
     )
     story = [Paragraph(inline(title), TITLE)]

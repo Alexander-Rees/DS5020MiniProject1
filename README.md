@@ -104,7 +104,7 @@ everywhere).
 | `notebooks/model_analysis.ipynb` | Completion notebook: DE6, ML1-ML7, results and analysis, executed with outputs |
 | `reports/` | Aggregate CSV/JSON reports with no customer IDs (`results.json` is the interface for the memo/slides) |
 | `figures/` | `svd_curve.png`, `evaluation.png`, `customer_map.png` (polar size/mix map) and the supplementary `customer_map_components.png` (literal component 1 and 2 scores, same segments); anonymous points, no IDs |
-| `docs/` | Decision log, segment analysis, contribution log, submission checklist, Alex Rees's completed reflection, Jiaxiao Chen's reflection draft, and blank peer evaluation and reflection templates |
+| `docs/` | Decision log, segment analysis, contribution log, submission checklist, Alex Rees's completed reflection, Jiaxiao Chen's final reflection, and blank peer evaluation and reflection templates |
 | `data/` (ignored) | Raw file, train/test CSVs, matrices, index maps (customer maps are private), model factors and top-10 tables |
 
 ## Memo and slides
@@ -132,9 +132,10 @@ Without `--replace`, a new file is written next to an existing one with a time s
 
 ## Individual reflection
 
-Jiaxiao Chen's half-page reflection draft is `docs/individual_reflection.md` (editable source) and
-`output/pdf/individual_reflection.pdf` (one Letter page). It was drafted with AI assistance and is awaiting
-Jiaxiao Chen's own review. Rebuild the PDF after editing the Markdown:
+Jiaxiao Chen's half-page reflection is `docs/individual_reflection.md` (editable source) and
+`output/pdf/individual_reflection.pdf` (one Letter page). It was drafted with AI assistance on 2026-10-12 and
+marked final on 2026-10-13 at Jiaxiao Chen's request, with the body unchanged. Rebuild the PDF after editing the
+Markdown:
 
 ```bash
 python scripts/create_reflection.py     # needs reportlab and pypdf; PNG preview needs pdftoppm
@@ -147,8 +148,10 @@ Alex Rees's reflection is `docs/individual_reflection_alex_rees.md`.
 | Member | Role | Evidence |
 | --- | --- | --- |
 | Alex Rees | Data Engineer: DE1 profile, DE2 cleaning log, DE3 split, DE4 matrix, DE5 report, plus the exploratory ML1 note and dense-SVD ML2 (k = 100 chosen) in `notebooks/data_exploration.ipynb` | Commits `3eb1984`, `d2ba10f`, `91b282a`, `e798bb8`, `b15e231`, `7eed7d6` (git author `AlexRees23`; `3eb1984`: `Alexander Rees`) |
-| Jiaxiao Chen | ML Engineer completion: DE6 script, sparse ML2 sweep, ML3-ML7, tests, completion notebook, README, docs, memo, slides and reflection draft | Files listed in `docs/contribution_log.md`, dated 2026-10-12, prepared with AI assistance (Claude for implementation and drafting, Codex for planning and verification). They are in the completion commit "Complete retail recommendation project and individual reflection", author Jiaxiao Chen; use `git log --oneline -- <file>` to verify |
+| Jiaxiao Chen | ML Engineer completion: DE6 script, sparse ML2 sweep, ML3-ML7, tests, completion notebook, README, docs, memo, slides and reflection (drafted 2026-10-12, final 2026-10-13) | Files listed in `docs/contribution_log.md`, dated 2026-10-12, prepared with AI assistance (Claude for implementation and drafting, Codex for planning and verification). They are in the completion commit "Complete retail recommendation project and individual reflection", author Jiaxiao Chen; use `git log --oneline -- <file>` to verify |
 
 The memo (J2) and slides (J3) come from the artifact scripts above. The completion commit `20666f4` has been pushed to
-GitHub (https://github.com/Alexander-Rees/DS5020MiniProject1, `main`). Alex Rees signed the contribution log on 2026-10-13. Still open: Jiaxiao Chen's signature, the confidential peer evaluations, Jiaxiao Chen's review of the reflection
-draft, the presentation itself and the Canvas upload. See `docs/submission_checklist.md`.
+GitHub (https://github.com/Alexander-Rees/DS5020MiniProject1, `main`). Both partners have signed the contribution
+log (Alex Rees and Jiaxiao Chen, 2026-10-13), and Jiaxiao Chen's reflection is final (2026-10-13). Still open: the
+confidential peer evaluations, which each member submits separately and privately to the instructor, the
+presentation itself and the Canvas upload. See `docs/submission_checklist.md`.

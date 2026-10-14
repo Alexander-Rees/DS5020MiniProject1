@@ -11,6 +11,9 @@ implementation and drafting, Codex for planning and verification). They are incl
 with the subject "Complete retail recommendation project and individual reflection", authored as Jiaxiao Chen.
 The completion commit is identifiable by this subject; use `git log --oneline -- <file>` to verify.
 
+Rows dated 2026-10-13 record later updates: Alex Rees's reflection, and the finalization of Jiaxiao Chen's
+reflection and sign-off at Jiaxiao Chen's request. These updates are not part of the completion commit.
+
 | Date | Task | Owner | Evidence (commit, file or figure) | Git author | Status |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-09 | Repository created | DE | `3eb1984` Initial commit (`.gitignore`, `README.md`) | `Alexander Rees` | done |
@@ -34,14 +37,16 @@ The completion commit is identifiable by this subject; use `git log --oneline --
 | 2026-10-12 | J2 memo for Sarah (one page); prepared by Jiaxiao Chen with Claude assistance | ML | `output/pdf/memo.pdf` from `scripts/create_submission.py memo` | Jiaxiao Chen | prepared and included in completion commit; team review and presentation pending |
 | 2026-10-12 | J3 slides (six slides, 5-minute speaker notes); prepared by Jiaxiao Chen with Claude assistance; each member presents their own part | ML | `output/slides/presentation.pptx` from `scripts/create_slides.mjs` | Jiaxiao Chen | prepared and included in completion commit; team review and presentation pending |
 | (to do) | C3 peer evaluation (confidential, each member separately) | each | `docs/peer_evaluation_template.md` (do not commit filled forms) | - | open |
-| 2026-10-12 | Individual reflection draft, Jiaxiao Chen (first-person draft prepared with AI assistance) | ML | `docs/individual_reflection.md`, `output/pdf/individual_reflection.pdf` from `scripts/create_reflection.py` | Jiaxiao Chen | draft included in completion commit; student review pending |
+| 2026-10-12 | Individual reflection draft, Jiaxiao Chen (first-person draft prepared with AI assistance) | ML | `docs/individual_reflection.md`, `output/pdf/individual_reflection.pdf` from `scripts/create_reflection.py` | Jiaxiao Chen | draft included in completion commit; finalized 2026-10-13 (see row below) |
 | 2026-10-13 | Individual reflection, Alex Rees (half a page) | DE | `docs/individual_reflection_alex_rees.md` | Alex Rees | written 2026-10-13 |
+| 2026-10-13 | Individual reflection, Jiaxiao Chen, finalized (Date 2026-10-13, Status Final; body unchanged from the 2026-10-12 draft) and contribution log signed, at Jiaxiao Chen's request | ML | `docs/individual_reflection.md`, `output/pdf/individual_reflection.pdf` from `scripts/create_reflection.py`; `docs/contribution_log.md` -> Sign-off | Jiaxiao Chen | finalized 2026-10-13 |
 
 ## Sign-off
 
-To be filled in by hand. Each partner signs and dates once they have checked that the rows above are accurate.
+Each member's typed name below records their sign-off. Alex Rees signed on 2026-10-13. Jiaxiao Chen's typed
+signature was added at Jiaxiao Chen's request on 2026-10-13.
 
 | Member | Signature | Date |
 | --- | --- | --- |
 | Alex Rees (Data Engineer) | Alex Rees | 2026-10-13 |
-| Jiaxiao Chen (ML Engineer) | | |
+| Jiaxiao Chen (ML Engineer) | Jiaxiao Chen | 2026-10-13 |

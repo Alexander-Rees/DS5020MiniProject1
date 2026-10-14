@@ -2,8 +2,8 @@
 
 **Name:** Jiaxiao Chen\
 **Role:** ML Engineer\
-**Date:** 2026-10-12\
-**Status:** Draft for review
+**Date:** 2026-10-13\
+**Status:** Final
 
 As ML Engineer, I completed the project that Alex Rees started. Alex's DE1 to DE5 work and exploratory ML1 and ML2 prototype gave me the training matrix and the predeclared k = 100. My completion work added the DE6 rebuild script, a sparse SVD sweep from k = 10 to 200 that kept 100, cosine recommendations for products and customers, an evaluation on products customers first bought after the cutoff, a PCA comparison, a two-component customer map, 30 tests, a reproducible notebook, the docs, memo and slides. I used Claude to assist with implementation and drafting, and Codex for planning and verification.
 
