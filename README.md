@@ -104,7 +104,7 @@ everywhere).
 | `notebooks/model_analysis.ipynb` | Completion notebook: DE6, ML1-ML7, results and analysis, executed with outputs |
 | `reports/` | Aggregate CSV/JSON reports with no customer IDs (`results.json` is the interface for the memo/slides) |
 | `figures/` | `svd_curve.png`, `evaluation.png`, `customer_map.png` (polar size/mix map) and the supplementary `customer_map_components.png` (literal component 1 and 2 scores, same segments); anonymous points, no IDs |
-| `docs/` | Decision log, segment analysis, contribution log, submission checklist, Jiaxiao Chen's reflection draft, and blank templates for the peer evaluation and Alex Rees's reflection |
+| `docs/` | Decision log, segment analysis, contribution log, submission checklist, Alex Rees's completed reflection, Jiaxiao Chen's reflection draft, and blank peer evaluation and reflection templates |
 | `data/` (ignored) | Raw file, train/test CSVs, matrices, index maps (customer maps are private), model factors and top-10 tables |
 
 ## Memo and slides
@@ -146,7 +146,7 @@ Alex Rees's reflection is `docs/individual_reflection_alex_rees.md`.
 
 | Member | Role | Evidence |
 | --- | --- | --- |
-| Alex Rees (partner) | Data Engineer: DE1 profile, DE2 cleaning log, DE3 split, DE4 matrix, DE5 report, plus the exploratory ML1 note and dense-SVD ML2 (k = 100 chosen) in `notebooks/data_exploration.ipynb` | Commits `3eb1984`, `d2ba10f`, `91b282a`, `e798bb8`, `b15e231`, `7eed7d6` (git author `AlexRees23`; `3eb1984`: `Alexander Rees`) |
+| Alex Rees | Data Engineer: DE1 profile, DE2 cleaning log, DE3 split, DE4 matrix, DE5 report, plus the exploratory ML1 note and dense-SVD ML2 (k = 100 chosen) in `notebooks/data_exploration.ipynb` | Commits `3eb1984`, `d2ba10f`, `91b282a`, `e798bb8`, `b15e231`, `7eed7d6` (git author `AlexRees23`; `3eb1984`: `Alexander Rees`) |
 | Jiaxiao Chen | ML Engineer completion: DE6 script, sparse ML2 sweep, ML3-ML7, tests, completion notebook, README, docs, memo, slides and reflection draft | Files listed in `docs/contribution_log.md`, dated 2026-10-12, prepared with AI assistance (Claude for implementation and drafting, Codex for planning and verification). They are in the completion commit "Complete retail recommendation project and individual reflection", author Jiaxiao Chen; use `git log --oneline -- <file>` to verify |
 
 The memo (J2) and slides (J3) come from the artifact scripts above. The completion commit `20666f4` has been pushed to

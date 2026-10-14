@@ -1,6 +1,6 @@
 # Contribution log (C2)
 
-Owners: **DE** = Alex Rees (Data Engineer, partner). **ML** = Jiaxiao Chen (ML Engineer).
+Owners: **DE** = Alex Rees (Data Engineer). **ML** = Jiaxiao Chen (ML Engineer).
 
 Rows up to 2026-10-11 are Alex Rees's work in `notebooks/data_exploration.ipynb`, cited by verified commit hash.
 The "git author" column is what `git log` records for each commit (`AlexRees23`, and `Alexander Rees` for the

@@ -4,12 +4,13 @@
 personal confirmation or a separate submission (signatures, peer ratings, reflections in their final form, the
 presentation, the Canvas upload) remain open until that member does them.
 
-Team: Jiaxiao Chen (ML Engineer) and Alex Rees (Data Engineer, partner).
+Team: Jiaxiao Chen (ML Engineer) and Alex Rees (Data Engineer).
 
 | Item | Where | State |
 | --- | --- | --- |
 | Data downloaded and its row count (1,067,371) in the README | `README.md` -> Data | ready |
 | README with targets, how to run, and team roles | `README.md` | ready |
+| Success targets written on Day 1 (J1 timing) | `README.md` -> Success targets (J1) | **missed**: targets and measured results are in the README, but the targets were written at the completion stage, not on Day 1 |
 | `build_matrix.py` rebuilds the matrix from the raw file | `python build_matrix.py` | ready |
 | Analysis notebook, run top to bottom without errors | `notebooks/model_analysis.ipynb` (executed with outputs); Alex Rees's `notebooks/data_exploration.ipynb` unchanged | ready |
 | Cleaning log and matrix report (DE2, DE5) | `reports/cleaning_log.csv`, `reports/matrix_report.json` | ready |

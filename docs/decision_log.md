@@ -1,7 +1,7 @@
 # Decision log (R1)
 
 Every decision that shapes the results, with its reason and where the evidence is. "Partner" means the Data
-Engineer's work in `notebooks/data_exploration.ipynb` (partner Alex Rees), dated by its commits.
+Engineer's work in `notebooks/data_exploration.ipynb` (Alex Rees), dated by its commits.
 "Completion" means the files Jiaxiao Chen (ML Engineer) prepared on 2026-10-12 with AI assistance (Claude for
 implementation and drafting, Codex for planning and verification).
 No other dates are claimed.

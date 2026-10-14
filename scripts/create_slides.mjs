@@ -49,7 +49,7 @@ const COLOR = {
 const SIZE = { cover: 64, coverSub: 30, title: 44, body: 23, small: 20, source: 14 };
 const NOTES_WORDS = { min: 560, max: 640, hardMin: 520, hardMax: 680 };
 const FONT = resolvePresentationFont();
-// Alex Rees (partner) did the original data work and exploratory SVD; Jiaxiao Chen completed the ML work.
+// Alex Rees did the original data work and exploratory SVD; Jiaxiao Chen completed the ML work.
 const DATA_ENGINEER = "Alex Rees, Data Engineer";
 const ML_ENGINEER = "Jiaxiao Chen, ML Engineer";
 
